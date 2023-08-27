@@ -1,0 +1,165 @@
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete your profile Here</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    {% load static %}
+   
+    <link rel="stylesheet" href="{% static 'regi/style.css' %}">
+
+
+    <style>
+
+
+.col-form-label {
+  
+  line-height: 1;
+}
+
+form{
+  width: 50%;
+  background-color: #fff;
+  padding:3%;
+}
+
+body{
+    background-image: url(https://img.freepik.com/premium-photo/luxury-wedding-concept-wedding-rings-flowers_23-2148652001.jpg?w=2000);
+
+    width: 100%; 
+     height: auto; 
+    
+    background-size: cover;
+}
+
+
+
+
+
+
+    </style>
+    
+</head>
+<body >
+    
+    <div class="container form_regi" >
+        <div class="row">
+
+            <h2 style="text-align: center; color: black; font-family: 'Courier New', Courier, monospace;">Marriage Dot  Com</h2>
+            
+           
+
+
+
+               <div class="form1" style="display: flex;
+               justify-content: center; ">
+
+                            
+    <form action="" method="POST">
+        {% csrf_token %}
+        <h2>Registration</h2>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input  class="form-control" id="inputEmail3" placeholder="Your Name"  name="name">
+          </div>
+        </div>
+      
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-form-label">Age</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="inputPassword3" placeholder="Your Age"  name="age">
+          </div>
+        </div>
+
+
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-form-label">Gender</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="inputPassword3" placeholder="Male/Female"  name="gender">
+          </div>
+        </div>
+
+
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-form-label">Marrital Status</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="inputPassword3" placeholder="Married or  Unmarried or Divorced"  name="mstatus">
+          </div>
+        </div>
+
+
+
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-form-label">Present Address</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="inputPassword3" placeholder="Present Address"  name="present_address">
+          </div>
+        </div>
+
+
+
+
+
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-form-label">Hometown</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="" placeholder="Hometown"  name="hometown">
+          </div>
+        </div>
+
+
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-form-label">Occupation</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="" placeholder="Occupation"  name="occupation">
+          </div>
+        </div>
+
+
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-form-label">Blood Group</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="inputPassword3" placeholder="Blood Group"  name="blood">
+          </div>
+        </div>
+
+
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-form-label">Color</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="inputPassword3" placeholder="Your Body Color"  name="color">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-form-label">Height</labHel>
+          <div class="col-sm-10">
+            <input class="form-control" id="inputPassword3" placeholder="Your Height"  name="height">
+          </div>
+        </div>
+
+        <br>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Register Here</button>
+          </div>
+        </div>
+      </form>
+
+               </div>
+
+        
+        </div>
+    </div>
+
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

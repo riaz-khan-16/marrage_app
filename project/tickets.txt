@@ -1,0 +1,6 @@
+6. Displaying data in a web page (completed in 1 hour) 
+7. Make a public page  (completed in 1 hour) 
+8. Make Login system
+9. Add details registrations
+10. Display details 
+11. Converting Bangla

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+text-align: center;
+}
+
+body{
+  background-color: black;
+}
+
+.dashboard{
+  background-color: #fff;
+    height: auto;
+    margin-top: 4%;
+
+
+}
+.main{padding: 5%;}
+
+.menus{
+  display: flex;
+  justify-content: center;
+ padding-bottom: 2%;
+}
+
+
+
+    </style>
+  
+  
+  </head>
+
+              
+
+
+
+
+    <body>
+
+      <div class="container  dashboard">
+
+        <div class="main">
+
+        
+        <h1 style="text-align: center; margin: 3% 0%;">ADMIN DASHBOARD</h1>
+
+   <!-- On tables -->
+
+   <table style="width: 100%; ">
+    <colgroup>
+      <col span="2" style="background-color: #D6EEEE">
+    </colgroup>
+
+
+    <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Occupation</th>
+    <th>HomeTown</th>
+    <th>Present Address</th>
+    <th>Color</th>
+    <th>Height</th>
+    <th>Marrital Status</th>
+    <th>Blood Group</th>
+    <th>Update</th>
+    <th>Delete</th>
+    </tr>
+
+
+    {% for item in items %}
+    <tr>
+    <td>{{ item.id }}</td>
+    <td>{{ item.name }}</td>
+    <td>{{ item.age }}</td>
+    <td>{{ item.occupation }}</td>
+    <td>{{ item.hometown }}</td>
+    <td>{{ item.present_address }}</td>
+    <td>{{ item.color }}</td>
+    <td>{{ item.height }}</td>
+    <td>{{ item.mstatus }}</td>
+    <td>{{ item.blood }}</td>
+    <td><a href="">Update</a></td>
+    <td><a href="">Delete</a></td>
+    </tr>
+
+    {% endfor %}
+
+
+    </table>
+  </div>
+
+  <div class="container menus">
+
+  <span class="badge bg-primary"> <a href="/public" style="color: #fff;">Public Page</a></span>
+<span class="badge bg-secondary"> <a href="/login" style="color: #fff;">Login Page</a></span>
+<span class="badge bg-success"> <a href="/regi" style="color: #fff;">Registration Page</a></span>
+<span class="badge bg-danger"><a href="/dregi" style="color: #fff;">Delails Registration Page</a></span>
+<!-- <span class="badge bg-warning text-dark">Warning</span>
+<span class="badge bg-info text-dark">Info</span>
+<span class="badge bg-light text-dark">Light</span>
+<span class="badge bg-dark">Dark</span> -->
+
+</div>
+
+      </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
